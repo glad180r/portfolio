@@ -14,10 +14,11 @@ body{
     display: flex;
     height: 100vh;
     width: 100vw;
+    flex-direction: column;
 }
 
 
-/* Header */
+/* Heading */
 header{
     width: 100vw;
 }
@@ -35,20 +36,64 @@ header{
 
 
 .name{
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 400;
 }
 
-.website-title{
+.career-titles{
     font-size: 1.5rem;
     font-weight: 400;
 }
 
+/* Nav Section */
+
 header a{
     text-decoration: none;
+    color: #0f62fe;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7.5vh;
+    gap: 25px;
 }
 
 .github-icon,
 .linkedin-icon{
     height: 25px;
 }
+
+.github-icon:hover,
+.linkedin-icon:hover{
+    color: black;
+}
+
+.email:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+section.intro{
+    background-color: #F4F4F4;
+    min-height: 35vh;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.about-text{
+    font-size: 1.2rem;
+    max-width: 75ch;
+}
+
+.profile-img{
+    border-radius: 50%;
+    height: 200px;
+}
+
