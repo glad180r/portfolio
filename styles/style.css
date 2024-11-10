@@ -6,8 +6,8 @@
     box-sizing: border-box;
 
     /* Font Declaration */
-    font-family: "IBM Plex Sans", sans-serif; /* IBM Plex Sans*/
-    /* font-family: "IBM Plex Mono", monospace; IBM Plex Mono */
+    font-family: "IBM Plex Sans", sans-serif;
+    /* font-family: "IBM Plex Mono", monospace; */
 }
 
 body{
@@ -115,33 +115,118 @@ section.intro{
     width: 850px;
 
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    gap: 12.5px;
+   grid-template-columns: repeat(2, 500px);
+    gap: 25px;
+
+    align-items: center;
+    justify-content: center;
 }
 
 /* Project Cards */
 .project-card{
-    height: 200px;
-    width: 200px;
+    font-size: 1rem;
+    height: 350px;
+    width: 500px;
 
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .5), 0 3px 6px rgba(0, 0, 0, .08);
+    border-radius: 10px;
+
+    color: #525F7F;
 }
 
-.project-thumbnail{
-    height: 80%;
-    object-fit:cover;
+.project-card a{
+    text-decoration: none;
 }
 
-.project-thumbnail:hover{
-    filter: grayscale(100%);
-    cursor: pointer;
-}
+
+
+
 
 .project-title{
     text-align: center;
-    font-size: 1.25rem;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    align-self: flex-start;
 }
+
+.project-description{
+    margin-bottom: 15px;
+}
+
+.project-tags-section{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.project-tag{
+    font-size: 0.9rem;
+    border: solid 2.5px #92EAC0;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.project-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.live-demo-btn{
+    width: 120px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 5px;
+
+    color: white;
+    background-color: #747fe0;
+    font-size: 1rem;
+}
+
+.live-demo-btn:hover{
+    background-color: #92AAF9;
+    cursor: pointer;
+}
+
+.live-demo-icon{
+    height: 1.15rem;  
+}
+
+
+.source-code-btn{
+    width: 150px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 2px;
+
+    background-color: white;
+    color: #747fe0;
+    font-size: 1rem;
+
+    box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+}
+
+.source-code-btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+    cursor: pointer;
+}
+
+.source-code-github-icon{
+    height: 1.15rem;  
+}
+
+
 
 
 
