@@ -98,13 +98,52 @@ section.intro{
 }
 
 
+.projects-section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.projects-section-title{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.projects-grid-container{
+    width: 850px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    gap: 12.5px;
+}
+
+/* Project Cards */
+.project-card{
+    height: 200px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.project-thumbnail{
+    height: 80%;
+    object-fit:cover;
+}
+
+.project-title{
+    text-align: center;
+    font-size: 1.25rem;
+}
 
 
 
 footer{
     background: radial-gradient(ellipse at center 60%, #4b4362 0, #0560af 100%);
     color: #f6fde5;
-    height: 30vh;
+    min-height: 30vh;
     font-size: 1.25rem;
 
     display: flex;
