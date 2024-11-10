@@ -133,6 +133,11 @@ section.intro{
     object-fit:cover;
 }
 
+.project-thumbnail:hover{
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
 .project-title{
     text-align: center;
     font-size: 1.25rem;
@@ -143,7 +148,7 @@ section.intro{
 footer{
     background: radial-gradient(ellipse at center 60%, #4b4362 0, #0560af 100%);
     color: #f6fde5;
-    min-height: 30vh;
+    min-height: 10vh;
     font-size: 1.25rem;
 
     display: flex;
