@@ -97,3 +97,18 @@ section.intro{
     height: 200px;
 }
 
+
+
+
+
+footer{
+    background: radial-gradient(ellipse at center 60%, #4b4362 0, #0560af 100%);
+    color: #f6fde5;
+    height: 30vh;
+    font-size: 1.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
